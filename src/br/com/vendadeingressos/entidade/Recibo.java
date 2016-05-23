@@ -7,6 +7,7 @@ package br.com.vendadeingressos.entidade;
 
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.List;
 
 /**
  *
@@ -21,6 +22,24 @@ public class Recibo {
     private String conta;
     private String tipoPagamento;
     private String statusPagamento;
+    private List<Entrega> entrega;
+
+    public List<Entrega> getEntrega() {
+        return entrega;
+    }
+
+    public void setEntrega(List<Entrega> entrega) {
+        this.entrega = entrega;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+    private Cliente cliente;
 
     public Instant getData() {
         return data;

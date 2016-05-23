@@ -6,6 +6,7 @@
 package br.com.vendadeingressos.entidade;
 
 import java.time.Instant;
+import java.util.List;
 
 /**
  *
@@ -15,6 +16,15 @@ public class Evento {
 
     private Instant data;
     private int numeroDeIngressos;
+    private List<Ingresso> ingressos;
+
+    public List<Ingresso> getIngressos() {
+        return ingressos;
+    }
+
+    public void setIngressos(List<Ingresso> ingressos) {
+        this.ingressos = ingressos;
+    }
 
     public Instant getData() {
         return data;

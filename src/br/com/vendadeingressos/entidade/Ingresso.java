@@ -12,6 +12,33 @@ package br.com.vendadeingressos.entidade;
 public class Ingresso {
 
     private int numero;
+    private Evento evento;
+    private Entrega entrega;
+    private TipoIngresso tipoIngresso;
+
+    public Evento getEvento() {
+        return evento;
+    }
+
+    public void setEvento(Evento evento) {
+        this.evento = evento;
+    }
+
+    public TipoIngresso getTipoIngresso() {
+        return tipoIngresso;
+    }
+
+    public void setTipoIngresso(TipoIngresso tipoIngresso) {
+        this.tipoIngresso = tipoIngresso;
+    }
+
+    public Entrega getEntrega() {
+        return entrega;
+    }
+
+    public void setEntrega(Entrega entrega) {
+        this.entrega = entrega;
+    }
 
     public int getNumero() {
         return numero;

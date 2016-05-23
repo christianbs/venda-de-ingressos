@@ -6,6 +6,7 @@
 package br.com.vendadeingressos.entidade;
 
 import java.time.Instant;
+import java.util.List;
 
 /**
  *
@@ -16,6 +17,33 @@ public class Pedido {
     private Instant data;
     private long numero;
     private String status;
+    private Cliente cliente;
+    private List<Entrega> entregas;
+    private List<Item> itens;
+
+    public List<Item> getItens() {
+        return itens;
+    }
+
+    public void setItens(List<Item> itens) {
+        this.itens = itens;
+    }
+
+    public List<Entrega> getEntregas() {
+        return entregas;
+    }
+
+    public void setEntregas(List<Entrega> entregas) {
+        this.entregas = entregas;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
 
     public Instant getData() {
         return data;

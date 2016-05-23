@@ -6,6 +6,7 @@
 package br.com.vendadeingressos.entidade;
 
 import java.time.Instant;
+import java.util.List;
 
 /**
  *
@@ -18,6 +19,24 @@ public class Entrega {
     private String tipo;
     private String status;
     private String endereco;
+    private Pedido pedido;
+    private List<Ingresso> ingressos;
+
+    public List<Ingresso> getIngressos() {
+        return ingressos;
+    }
+
+    public void setIngressos(List<Ingresso> ingressos) {
+        this.ingressos = ingressos;
+    }
+
+    public Pedido getPedido() {
+        return pedido;
+    }
+
+    public void setPedido(Pedido pedido) {
+        this.pedido = pedido;
+    }
 
     public String getEndereco() {
         return endereco;

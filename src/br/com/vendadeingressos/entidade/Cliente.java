@@ -5,6 +5,8 @@
  */
 package br.com.vendadeingressos.entidade;
 
+import java.util.List;
+
 /**
  *
  * @author christian
@@ -16,6 +18,15 @@ public class Cliente {
     private String endereco;
     private String cartao;
     private String cpf;
+    private List<Pedido> pedidos;
+
+    public List<Pedido> getPedidos() {
+        return pedidos;
+    }
+
+    public void setPedidos(List<Pedido> pedidos) {
+        this.pedidos = pedidos;
+    }
 
     public String getNome() {
         return nome;
