@@ -37,6 +37,7 @@ public class Inicio {
                         escolhendo = false;
                         break;
                     case 1:
+                        new VendaIngressoView().venderIngresso();
                         break;
                     case 2:
                         new CadastroClienteView().cadastrarCliente();

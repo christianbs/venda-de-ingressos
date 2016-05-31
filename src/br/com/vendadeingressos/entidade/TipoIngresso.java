@@ -13,6 +13,7 @@ import java.math.BigDecimal;
  */
 public class TipoIngresso {
 
+    private long id;
     private String tipo;
     private BigDecimal preco;
     private String descricao;
@@ -39,6 +40,14 @@ public class TipoIngresso {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
 }

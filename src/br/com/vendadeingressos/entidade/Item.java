@@ -11,7 +11,7 @@ package br.com.vendadeingressos.entidade;
  */
 public class Item {
 
-    private int quantidade;
+    private long id;
     private Ingresso ingresso;
 
     public Ingresso getIngresso() {
@@ -22,12 +22,12 @@ public class Item {
         this.ingresso = ingresso;
     }
 
-    public int getQuantidade() {
-        return quantidade;
+    public long getId() {
+        return id;
     }
 
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+    public void setId(long id) {
+        this.id = id;
     }
 
 }

@@ -5,16 +5,13 @@
  */
 package br.com.vendadeingressos.acessoadados;
 
-import br.com.vendadeingressos.entidade.Evento;
+import br.com.vendadeingressos.entidade.Item;
 
 /**
  *
  * @author christian
  */
-public interface EventoAcessoADados {
+public interface ItemAcessoADados {
 
-    void incluirEvento(Evento evento);
-
-    Evento consultarEventoPorId(long id);
-
+    void inserirItem(Item item);
 }

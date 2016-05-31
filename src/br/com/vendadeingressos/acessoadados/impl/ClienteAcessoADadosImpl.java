@@ -32,4 +32,14 @@ public class ClienteAcessoADadosImpl implements ClienteAcessoADados {
         cliente.setId(++registrosSalvos);
     }
 
+    @Override
+    public Cliente consultarClientePorId(long id) {
+        for (Cliente cliente : banco.getClientes()) {
+            if (cliente.getId() == id) {
+                return cliente;
+            }
+        }
+        return null;
+    }
+
 }

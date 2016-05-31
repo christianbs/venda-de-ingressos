@@ -11,6 +11,7 @@ package br.com.vendadeingressos.entidade;
  */
 public class Ingresso {
 
+    private long id;
     private int numero;
     private Evento evento;
     private Entrega entrega;
@@ -46,6 +47,14 @@ public class Ingresso {
 
     public void setNumero(int numero) {
         this.numero = numero;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
 }

@@ -13,6 +13,6 @@ import br.com.vendadeingressos.entidade.Ingresso;
  */
 public interface VendaIngressoService {
 
-    void venderIngresso(Ingresso ingresso);
+    void venderIngresso(long idCliente, long idEvento, int quantidadeIngressos, int quantidadeComDesconto);
 
 }

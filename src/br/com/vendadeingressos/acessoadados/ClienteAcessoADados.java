@@ -15,4 +15,6 @@ public interface ClienteAcessoADados {
 
     void incluirCliente(Cliente cliente);
 
+    Cliente consultarClientePorId(long id);
+
 }
