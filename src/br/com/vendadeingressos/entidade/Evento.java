@@ -14,6 +14,7 @@ import java.util.List;
  */
 public class Evento {
 
+    private long id;
     private Instant data;
     private int numeroDeIngressos;
     private List<Ingresso> ingressos;
@@ -40,6 +41,14 @@ public class Evento {
 
     public void setNumeroDeIngressos(int numeroDeIngressos) {
         this.numeroDeIngressos = numeroDeIngressos;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
 }

@@ -5,6 +5,8 @@
  */
 package br.com.vendadeingressos.servico.impl;
 
+import br.com.vendadeingressos.acessoadados.ClienteAcessoADados;
+import br.com.vendadeingressos.acessoadados.impl.ClienteAcessoADadosImpl;
 import br.com.vendadeingressos.entidade.Cliente;
 import br.com.vendadeingressos.servico.CadastroClienteService;
 
@@ -14,9 +16,15 @@ import br.com.vendadeingressos.servico.CadastroClienteService;
  */
 public class CadastroClienteServiceImpl implements CadastroClienteService {
 
+    private final ClienteAcessoADados dados;
+
+    public CadastroClienteServiceImpl() {
+        dados = new ClienteAcessoADadosImpl();
+    }
+
     @Override
     public void cadastrarCliente(Cliente cliente) {
-        
+        dados.incluirCliente(cliente);
     }
 
 }
