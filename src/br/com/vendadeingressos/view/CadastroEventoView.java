@@ -39,11 +39,11 @@ public class CadastroEventoView {
                 System.out.println("Número inválido");
             }
         }
+        scanner.nextLine();
         while (evento.getData() == null) {
             try {
-                scanner.nextLine();
                 System.out.print("Digite a data do evento(yyyy-MM-dd): ");
-                Instant dataEvento = Instant.parse(scanner.nextLine()+"T00:00:00Z");
+                Instant dataEvento = Instant.parse(scanner.nextLine() + "T00:00:00Z");
                 evento.setData(dataEvento);
             } catch (Exception e) {
                 System.out.println("Data inválida");

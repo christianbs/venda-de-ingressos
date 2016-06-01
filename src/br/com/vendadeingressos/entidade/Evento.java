@@ -6,6 +6,8 @@
 package br.com.vendadeingressos.entidade;
 
 import java.time.Instant;
+import java.util.AbstractList;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,6 +20,10 @@ public class Evento {
     private Instant data;
     private int numeroDeIngressos;
     private List<Ingresso> ingressos;
+
+    public Evento() {
+        ingressos = new ArrayList();
+    }
 
     public List<Ingresso> getIngressos() {
         return ingressos;

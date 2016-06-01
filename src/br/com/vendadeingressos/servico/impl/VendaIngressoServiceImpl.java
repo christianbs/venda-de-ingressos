@@ -65,6 +65,7 @@ public class VendaIngressoServiceImpl implements VendaIngressoService {
         List<Item> itens = new ArrayList();
         for (int i = 0; i < quantidadeIngressos; i++) {
             Ingresso ingresso = new Ingresso();
+            ingresso.setEvento(evento);
             if (quantidadeComDesconto > 0) {
                 ingresso.setTipoIngresso(dadosTipoIngresso.consultarPorId(1));
             } else {
